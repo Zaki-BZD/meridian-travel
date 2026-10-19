@@ -2,6 +2,8 @@
 
 A portfolio landing page for a fictional luxury travel agency. Cinematic and editorial, built to convert: an interactive WebGL globe, a pinned horizontal destination story, an expanding-panel gallery, a working trip finder, a full journey modal and a validated inquiry form.
 
+**Live:** https://meridian-travel-lilac.vercel.app
+
 > **Demo project.** Meridian, its prices, reviews, statistics and contact details are fictional.
 
 ![Globe hero](portfolio-assets/01-globe-hero.png)
@@ -13,7 +15,7 @@ A portfolio landing page for a fictional luxury travel agency. Cinematic and edi
 - **React Three Fiber** + **drei** + **three.js** — the hero globe (custom GLSL shaders)
 - **GSAP** + **ScrollTrigger** and **Lenis** — pinned horizontal scroll, parallax, scroll-scrubbed reveals, smooth scrolling
 - **Framer Motion** — layout animations, modals, accordion, micro-interactions
-- Deploy target: **Vercel**
+- Hosted on **Vercel**; every push to `main` deploys to production automatically
 
 ## Getting started
 
