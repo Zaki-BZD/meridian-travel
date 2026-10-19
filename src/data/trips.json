@@ -1,0 +1,222 @@
+[
+  {
+    "id": "santorini-caldera",
+    "title": "Santorini Caldera Escape",
+    "place": "santorini",
+    "styles": ["Beach", "Wellness"],
+    "nights": 7,
+    "price": 2190,
+    "summary": "Cave suites, caldera sailing and sunsets from your own terrace.",
+    "itinerary": [
+      { "day": "Day 1", "title": "Arrive in Imerovigli", "text": "Private transfer to a cave suite on the caldera rim. Welcome dinner of Santorinian fava and grilled octopus." },
+      { "day": "Days 2–3", "title": "The quiet villages", "text": "Morning walk along the cliff path to Oia before the crowds, then Pyrgos and its Venetian lanes with a local historian." },
+      { "day": "Day 4", "title": "Catamaran day", "text": "A private catamaran to the hot springs, Red Beach and a swim stop off Thirasia, lunch cooked on board." },
+      { "day": "Day 5", "title": "Volcanic wine", "text": "Assyrtiko tasting at a family winery, then a long, unscheduled afternoon by the infinity pool." },
+      { "day": "Day 6", "title": "Akrotiri at opening", "text": "The Bronze Age city with an archaeologist at opening hour, followed by a black-sand beach lunch in Perissa." },
+      { "day": "Day 7", "title": "Farewell", "text": "Slow breakfast on the terrace and a private transfer for your onward flight." }
+    ],
+    "included": ["7 nights in a caldera cave suite", "Private catamaran day with lunch", "Winery visit and tasting", "Guided Akrotiri visit"],
+    "notIncluded": ["Dinners except the welcome dinner"]
+  },
+  {
+    "id": "kyoto-slow",
+    "title": "Kyoto in Slow Motion",
+    "place": "kyoto",
+    "styles": ["Culture", "Wellness"],
+    "nights": 9,
+    "price": 3490,
+    "summary": "Ryokan nights, private temple gardens and kaiseki by lantern light.",
+    "itinerary": [
+      { "day": "Day 1", "title": "Arrive in Kyoto", "text": "Met at Kyoto Station and settled into a townhouse hotel in Higashiyama. Evening stroll through Gion." },
+      { "day": "Days 2–3", "title": "Gardens before the gates open", "text": "A private early visit to a Zen garden, then Kiyomizu-dera and the lanes of Sannenzaka with a cultural guide." },
+      { "day": "Day 4", "title": "Tea ceremony", "text": "A tea ceremony hosted by a twelfth-generation tea master, followed by a lesson in wagashi sweet-making." },
+      { "day": "Days 5–6", "title": "Ryokan in the hills", "text": "Two nights in a family-run ryokan with a private onsen and multi-course kaiseki dinners." },
+      { "day": "Day 7", "title": "Arashiyama by bicycle", "text": "Ride through the bamboo grove at dawn and along the Katsura river to a riverside tofu lunch." },
+      { "day": "Days 8–9", "title": "Nara and farewell", "text": "A day trip to Nara's temples, then a final kaiseki dinner and a private transfer to Kansai Airport." }
+    ],
+    "included": ["9 nights in a townhouse hotel and ryokan", "Private tea ceremony", "Kaiseki dinners at the ryokan", "Rail pass for day trips"],
+    "notIncluded": ["Most lunches"]
+  },
+  {
+    "id": "kyoto-kumano",
+    "title": "Kyoto & the Kumano Kodo",
+    "place": "kyoto",
+    "styles": ["Culture", "Adventure"],
+    "nights": 12,
+    "price": 4890,
+    "summary": "Kyoto's temples, then four days on Japan's ancient pilgrimage trail.",
+    "itinerary": [
+      { "day": "Days 1–3", "title": "Kyoto essentials", "text": "Fushimi Inari at sunrise, Kinkaku-ji and a private Gion evening with a maiko performance." },
+      { "day": "Day 4", "title": "Into the Kii mountains", "text": "Rail and private car to Takijiri, the traditional start of the Nakahechi route." },
+      { "day": "Days 5–8", "title": "Walking the Kumano Kodo", "text": "Guided forest walks of 10–15 km a day, with luggage sent ahead to minshuku guesthouses each night." },
+      { "day": "Day 9", "title": "Hongu Taisha", "text": "Arrive at the grand shrine, then soak in the river-fed hot spring at Kawayu." },
+      { "day": "Days 10–12", "title": "Koyasan temple stay", "text": "A night in a Buddhist temple lodging on Mount Koya, then back to Kyoto for your flight." }
+    ],
+    "included": ["12 nights in hotels, guesthouses and a temple lodging", "Bilingual trail guide for 4 days", "Luggage transfers on the trail", "Breakfasts and dinners on the trail"],
+    "notIncluded": ["Lunches in Kyoto"]
+  },
+  {
+    "id": "marrakech-agafay",
+    "title": "Marrakech & the Agafay Desert",
+    "place": "marrakech",
+    "styles": ["Culture", "Adventure"],
+    "nights": 7,
+    "price": 1890,
+    "summary": "A riad in the medina, the souks with a master guide, and a night under desert stars.",
+    "itinerary": [
+      { "day": "Day 1", "title": "Into the medina", "text": "Met at the airport and walked into a restored riad. Mint tea on the roof as the call to prayer begins." },
+      { "day": "Days 2–3", "title": "Souks and palaces", "text": "The souks with a guide who has walked them for thirty years, Bahia Palace, and a hammam ritual." },
+      { "day": "Day 4", "title": "Atlas foothills", "text": "Drive into the Ourika valley for a Berber family lunch and a walk to the waterfalls." },
+      { "day": "Day 5", "title": "Agafay desert camp", "text": "Camel ride at sunset, dinner by firelight and a canvas suite under the stars." },
+      { "day": "Days 6–7", "title": "Gardens and farewell", "text": "Jardin Majorelle at opening, a cooking class, and a private transfer to the airport." }
+    ],
+    "included": ["6 nights in a medina riad, 1 night in a desert camp", "Private guide for the souks", "Hammam ritual", "Cooking class"],
+    "notIncluded": ["Dinners in Marrakech"]
+  },
+  {
+    "id": "bali-jungle-reef",
+    "title": "Bali: Jungle to Reef",
+    "place": "bali",
+    "styles": ["Beach", "Wellness"],
+    "nights": 10,
+    "price": 2690,
+    "summary": "Ubud's rice terraces and temples, then cliff-top days on the Bukit coast.",
+    "itinerary": [
+      { "day": "Day 1", "title": "Arrive in Ubud", "text": "Private transfer to a pool villa above the Ayung river valley." },
+      { "day": "Days 2–3", "title": "Rice terraces and temples", "text": "Sunrise at Tegallalang, a water-temple blessing at Tirta Empul, and a visit to a woodcarving village." },
+      { "day": "Days 4–5", "title": "Ubud slow days", "text": "Yoga at dawn, a Balinese cooking class with market visit, and a traditional massage." },
+      { "day": "Days 6–9", "title": "Uluwatu cliffs", "text": "Move south to a cliff-top retreat. Snorkelling trip to Nusa Penida and a Kecak fire dance at sunset." },
+      { "day": "Day 10", "title": "Farewell", "text": "A late check-out and private transfer to Denpasar." }
+    ],
+    "included": ["10 nights in pool villas", "Temple blessing with a priest", "Cooking class", "Nusa Penida snorkelling trip"],
+    "notIncluded": ["Dinners", "Spa treatments beyond one massage"]
+  },
+  {
+    "id": "bali-retreat",
+    "title": "Bali Retreat & Reset",
+    "place": "bali",
+    "styles": ["Wellness"],
+    "nights": 14,
+    "price": 3890,
+    "summary": "Two weeks of yoga, spa rituals and plant-based cooking in the hills of Ubud.",
+    "itinerary": [
+      { "day": "Day 1", "title": "Arrive at the retreat", "text": "Private transfer to a wellness resort in the hills north of Ubud, then a consultation with your wellness guide." },
+      { "day": "Days 2–7", "title": "Settle into the rhythm", "text": "Daily yoga and meditation, a personalised spa programme and plant-based meals from the resort garden." },
+      { "day": "Day 8", "title": "Mountain sunrise", "text": "An optional pre-dawn hike up Mount Batur for sunrise over the caldera lake." },
+      { "day": "Days 9–13", "title": "Deepen the practice", "text": "Breathwork, sound healing and a Balinese healer visit, with afternoons kept free." },
+      { "day": "Day 14", "title": "Farewell", "text": "A closing ceremony and a private transfer to Denpasar." }
+    ],
+    "included": ["14 nights at a wellness resort", "Full board, plant-based", "Daily yoga and meditation", "Personalised spa programme"],
+    "notIncluded": ["Alcoholic drinks"]
+  },
+  {
+    "id": "patagonia-torres",
+    "title": "Torres del Paine Expedition",
+    "place": "patagonia",
+    "styles": ["Adventure"],
+    "nights": 10,
+    "price": 4290,
+    "summary": "An all-inclusive lodge inside the park, guided hikes and Grey Glacier by boat.",
+    "itinerary": [
+      { "day": "Days 1–2", "title": "Santiago to Puerto Natales", "text": "A night in Santiago, then a flight south and a private drive into Torres del Paine." },
+      { "day": "Day 3", "title": "Base of the Towers", "text": "The park's classic hike to the granite towers, graded to your pace with an expert guide." },
+      { "day": "Days 4–5", "title": "Lakes and waterfalls", "text": "Salto Grande, the Lago Pehoé lookout, and a gentler day riding with gauchos." },
+      { "day": "Day 6", "title": "Grey Glacier", "text": "A boat across Grey Lake to the face of the glacier, with whisky on glacial ice." },
+      { "day": "Days 7–9", "title": "Your choice of trails", "text": "French Valley, kayaking on the Serrano river, or a puma-tracking day with a wildlife guide." },
+      { "day": "Day 10", "title": "Farewell", "text": "A lamb asado at a working estancia before your flight north." }
+    ],
+    "included": ["10 nights incl. an all-inclusive park lodge", "All guided excursions", "Domestic flights in Chile", "Meals and drinks at the lodge"],
+    "notIncluded": ["Meals in Santiago"]
+  },
+  {
+    "id": "patagonia-end-to-end",
+    "title": "Patagonia End to End",
+    "place": "patagonia",
+    "styles": ["Adventure", "Culture"],
+    "nights": 14,
+    "price": 6490,
+    "summary": "Fitz Roy, Perito Moreno and Torres del Paine across both sides of the border.",
+    "itinerary": [
+      { "day": "Days 1–2", "title": "Buenos Aires", "text": "Tango, parrilla and the Recoleta quarter before flying south to El Calafate." },
+      { "day": "Days 3–5", "title": "El Chaltén and Fitz Roy", "text": "Guided hikes to Laguna de los Tres and Laguna Torre from a mountain lodge." },
+      { "day": "Days 6–7", "title": "Perito Moreno", "text": "Walk on the glacier with crampons, then watch it calve from the boardwalks." },
+      { "day": "Days 8–12", "title": "Torres del Paine", "text": "Cross into Chile for five nights at an all-inclusive lodge inside the park." },
+      { "day": "Days 13–14", "title": "Punta Arenas", "text": "A final day on the Strait of Magellan and a flight home via Santiago." }
+    ],
+    "included": ["14 nights in lodges and boutique hotels", "Glacier walk and all guided hikes", "Domestic flights in both countries", "Full board in the parks"],
+    "notIncluded": ["Meals in Buenos Aires"]
+  },
+  {
+    "id": "iceland-aurora",
+    "title": "Iceland under the Aurora",
+    "place": "reykjavik",
+    "styles": ["Adventure", "Wellness"],
+    "nights": 6,
+    "price": 2490,
+    "summary": "Reykjavík design hotels, a glass-roofed lodge and ice caves with a glaciologist.",
+    "itinerary": [
+      { "day": "Day 1", "title": "Reykjavík", "text": "Check in to a design hotel in the old harbour and dine on New Nordic cooking." },
+      { "day": "Day 2", "title": "Golden Circle", "text": "Þingvellir, Geysir and Gullfoss with a private guide, then a soak in a quiet geothermal lagoon." },
+      { "day": "Days 3–4", "title": "South coast", "text": "By super-jeep to Seljalandsfoss, the black sands of Vík, and a glass-roofed lodge for aurora watching." },
+      { "day": "Day 5", "title": "Ice cave", "text": "Into a blue-ice cave in Vatnajökull with a glaciologist, then the icebergs of Jökulsárlón." },
+      { "day": "Day 6", "title": "Return to Reykjavík", "text": "Drive back along the coast, with a final night of seafood in the capital." }
+    ],
+    "included": ["6 nights in a design hotel and aurora lodge", "Private super-jeep and driver", "Ice cave with a glaciologist", "Geothermal lagoon entry"],
+    "notIncluded": ["Dinners in Reykjavík"]
+  },
+  {
+    "id": "iceland-ring-road",
+    "title": "Ring Road by Super-Jeep",
+    "place": "reykjavik",
+    "styles": ["Adventure"],
+    "nights": 11,
+    "price": 4590,
+    "summary": "The whole island, fjords to glaciers, with a private driver-guide.",
+    "itinerary": [
+      { "day": "Days 1–2", "title": "Reykjavík and Snæfellsnes", "text": "The capital, then the peninsula of Kirkjufell, lava caves and fishing villages." },
+      { "day": "Days 3–4", "title": "The north", "text": "Akureyri, whale watching from Húsavík and the Mývatn nature baths." },
+      { "day": "Days 5–6", "title": "East fjords", "text": "Dettifoss, the quiet fjord towns and reindeer country." },
+      { "day": "Days 7–9", "title": "Glaciers", "text": "Jökulsárlón, Diamond Beach, a glacier hike and an ice cave with a glaciologist." },
+      { "day": "Days 10–11", "title": "South coast", "text": "Vík, Skógafoss and a last night by the sea before the airport." }
+    ],
+    "included": ["11 nights in boutique hotels and farm stays", "Private super-jeep and driver-guide", "Whale watching", "Glacier hike and ice cave"],
+    "notIncluded": ["Lunches"]
+  },
+  {
+    "id": "amalfi-long-lunches",
+    "title": "Amalfi Coast, Long Lunches",
+    "place": "amalfi-coast",
+    "styles": ["Beach", "Culture"],
+    "nights": 7,
+    "price": 2890,
+    "summary": "A terrace above Positano, a wooden gozzo to hidden coves, and Ravello's gardens.",
+    "itinerary": [
+      { "day": "Day 1", "title": "Arrive in Positano", "text": "Private driver from Naples to a terrace room above the beach. Aperitivo at sunset." },
+      { "day": "Day 2", "title": "By boat to Capri", "text": "A wooden gozzo to Capri's grottoes and coves, lunch at a beach club only reachable by sea." },
+      { "day": "Day 3", "title": "Path of the Gods", "text": "A guided walk high above the coast from Bomerano to Nocelle, then down to Positano." },
+      { "day": "Days 4–5", "title": "Ravello", "text": "Villa Cimbrone's gardens, a cooking class in a lemon grove, and a concert evening." },
+      { "day": "Days 6–7", "title": "Pompeii and farewell", "text": "Pompeii with an archaeologist on the way back to Naples for your flight." }
+    ],
+    "included": ["7 nights in Positano and Ravello", "Private gozzo day to Capri", "Cooking class in a lemon grove", "All private transfers"],
+    "notIncluded": ["Dinners"]
+  },
+  {
+    "id": "cappadocia-istanbul",
+    "title": "Cappadocia & Istanbul",
+    "place": "cappadocia",
+    "styles": ["Culture", "Adventure"],
+    "nights": 6,
+    "price": 1990,
+    "summary": "Sunrise balloons, cave suites and two days in Istanbul's old city.",
+    "itinerary": [
+      { "day": "Day 1", "title": "Istanbul", "text": "Sultanahmet's mosques and the Grand Bazaar with a historian guide." },
+      { "day": "Day 2", "title": "The Bosphorus", "text": "A private boat between two continents and dinner in Karaköy." },
+      { "day": "Day 3", "title": "Fly to Cappadocia", "text": "A short flight to a cave suite in Uçhisar with views across the valleys." },
+      { "day": "Day 4", "title": "Sunrise balloon", "text": "A dawn balloon flight over the fairy chimneys, then the Göreme open-air museum." },
+      { "day": "Day 5", "title": "Underground cities", "text": "Derinkuyu with an archaeologist and a vineyard dinner with Anatolian wines." },
+      { "day": "Day 6", "title": "Farewell", "text": "A valley walk at first light and a transfer to Kayseri for your flight." }
+    ],
+    "included": ["6 nights in Istanbul and a Cappadocia cave hotel", "Sunrise balloon flight", "Private guides in both regions", "Domestic flight"],
+    "notIncluded": ["Most lunches and dinners"]
+  }
+]
