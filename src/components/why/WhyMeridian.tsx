@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { animate, motion, useInView } from "framer-motion";
+import { animate, motion } from "framer-motion";
 import { usePrefersReducedMotion } from "@/hooks/useMedia";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -87,35 +87,65 @@ export function WhyMeridian() {
   );
 }
 
-/** Renders the final value (SSR, reduced motion), then counts up from zero when scrolled into view. */
+/**
+ * Server-renders the final value, then counts up from zero as the stat scrolls into view.
+ * It never rests at zero: with no IntersectionObserver, reduced motion, or a hidden tab
+ * the final value simply stays, and a timer guarantees the end value even if animation
+ * frames are throttled.
+ */
 function CountUp({ to, decimals, delay }: { to: number; decimals: number; delay: number }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-15% 0px" });
   const reduced = usePrefersReducedMotion();
-  const format = (n: number) => n.toFixed(decimals);
-
-  // Start from zero once hydrated (the section is below the fold, so nobody sees the swap).
-  useEffect(() => {
-    if (!reduced && ref.current && !inView) ref.current.textContent = format(0);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [reduced]);
 
   useEffect(() => {
     const el = ref.current;
-    if (!el || !inView || reduced) return;
-    const controls = animate(0, to, {
-      duration: 2,
-      delay,
-      ease: [0.22, 1, 0.36, 1],
-      onUpdate: (v) => (el.textContent = format(v)),
-    });
-    return () => controls.stop();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [inView, reduced, to, delay]);
+    if (!el || reduced || typeof IntersectionObserver === "undefined") return;
+    const format = (n: number) => n.toFixed(decimals);
+    let controls: ReturnType<typeof animate> | undefined;
+    let safety: number | undefined;
+
+    const finish = () => {
+      controls?.stop();
+      el.textContent = format(to);
+    };
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        io.disconnect();
+        if (document.visibilityState !== "visible") return;
+        // Only now (just before it's on screen) does it drop to zero and count.
+        el.textContent = format(0);
+        controls = animate(0, to, {
+          duration: 2,
+          delay,
+          ease: [0.22, 1, 0.36, 1],
+          onUpdate: (v) => (el.textContent = format(v)),
+          onComplete: finish,
+        });
+        safety = window.setTimeout(finish, (delay + 2) * 1000 + 300);
+      },
+      // fire slightly before the stat enters the viewport
+      { rootMargin: "0px 0px 10% 0px" },
+    );
+    io.observe(el);
+
+    const onVisibility = () => {
+      if (document.visibilityState === "hidden") finish();
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+
+    return () => {
+      io.disconnect();
+      window.clearTimeout(safety);
+      document.removeEventListener("visibilitychange", onVisibility);
+      finish();
+    };
+  }, [to, decimals, delay, reduced]);
 
   return (
     <span ref={ref} className="tabular-nums">
-      {format(to)}
+      {to.toFixed(decimals)}
     </span>
   );
 }

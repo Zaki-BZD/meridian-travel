@@ -31,12 +31,13 @@ await page.hover("nav[aria-label='Destinations on the globe'] >> text=Santorini"
 await page.waitForTimeout(1500);
 await page.screenshot({ path: `${OUT}/01-globe-hero.png` });
 
-// 2. Destinations scroll story, mid-way (Kyoto card)
+// 2. Places gallery, one panel expanded
 page = await open();
-const destTop = await sectionTop(page, "#destinations");
-await page.evaluate((y) => window.scrollTo(0, y + window.innerWidth), destTop);
+await page.evaluate((y) => window.scrollTo(0, y + 110), await sectionTop(page, "#places"));
 await page.waitForTimeout(2500);
-await page.screenshot({ path: `${OUT}/02-destination-scroll.png` });
+await page.hover("[data-panel]:nth-child(4)");
+await page.waitForTimeout(1600);
+await page.screenshot({ path: `${OUT}/02-places.png` });
 
 // 3. Trip finder with a filter applied
 page = await open();

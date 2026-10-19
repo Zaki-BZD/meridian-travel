@@ -7,8 +7,15 @@ import { useSite } from "@/components/providers/Providers";
 import { useCoarsePointer, useIntroReveal, useIsMobile, usePrefersReducedMotion } from "@/hooks/useMedia";
 import { DESTINATIONS, HOME } from "@/data/destinations";
 import { goToJourney } from "@/lib/events";
+import { GlobeBoundary, GlobeStill, hasWebGL } from "./globe/GlobeFallback";
 
 const Globe = dynamic(() => import("./globe/Globe"), { ssr: false });
+
+/** No WebGL at all: show the still straight away. */
+function StillReady({ onReady }: { onReady: () => void }) {
+  useEffect(onReady, [onReady]);
+  return <GlobeStill />;
+}
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -90,19 +97,24 @@ export function Hero() {
           globeReady && introDone ? "opacity-100" : "opacity-0"
         }`}
       >
-        {loadGlobe && (
-          <Globe
-            active={introDone}
-            inView={inView}
-            reduced={reduced}
-            mobile={mobile}
-            coarse={coarse}
-            highlighted={highlighted}
-            onHighlight={setHighlighted}
-            onSelect={goToDestination}
-            onReady={onReady}
-          />
-        )}
+        {loadGlobe &&
+          (hasWebGL() ? (
+            <GlobeBoundary fallback={<GlobeStill />} onError={onReady}>
+              <Globe
+                active={introDone}
+                inView={inView}
+                reduced={reduced}
+                mobile={mobile}
+                coarse={coarse}
+                highlighted={highlighted}
+                onHighlight={setHighlighted}
+                onSelect={goToDestination}
+                onReady={onReady}
+              />
+            </GlobeBoundary>
+          ) : (
+            <StillReady onReady={onReady} />
+          ))}
       </div>
 
       {/* copy */}
