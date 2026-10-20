@@ -4,20 +4,11 @@ import { Component, type ReactNode } from "react";
 import Image from "next/image";
 import globeStill from "../../../../public/images/globe-fallback.jpg";
 
-let webglSupport: boolean | undefined;
-
-/** Whether this browser can create a WebGL context (checked once). */
-export function hasWebGL() {
-  if (webglSupport === undefined) {
-    try {
-      const canvas = document.createElement("canvas");
-      webglSupport = !!(canvas.getContext("webgl2") ?? canvas.getContext("webgl"));
-    } catch {
-      webglSupport = false;
-    }
-  }
-  return webglSupport;
-}
+/**
+ * Whether the browser exposes WebGL at all. Deliberately cheap: probing with a real context
+ * is costly, and if context creation fails later, <GlobeBoundary> catches it.
+ */
+export const hasWebGL = () => typeof window !== "undefined" && "WebGLRenderingContext" in window;
 
 /** A still of the rendered globe, used when WebGL is unavailable or fails. */
 export function GlobeStill() {
