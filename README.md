@@ -32,7 +32,7 @@ Requires Node 20+. Optional env var: `NEXT_PUBLIC_SITE_URL` (canonical URL for m
 
 | # | Section | Highlights |
 | --- | --- | --- |
-| — | Intro loader | Flight path draws, then a clip-path wipe. Pure CSS/SMIL, so it never waits for JS (≤1.5s). Skipped on phones (<768px) and for reduced motion so the hero shows immediately |
+| — | Intro loader | Flight path draws, then a clip-path wipe. Pure CSS/SMIL, so it never waits for JS (≤1.5s on any device); skipped for reduced motion |
 | 1 | Hero | R3F globe with custom shaders, atmosphere glow, animated great-circle arcs from London, pulsing pins; drag to rotate; pins and list jump to destinations; static still if WebGL is unavailable |
 | 2 | Destinations | Pinned horizontal scroll; parallax photo layer, sliding display type; stacked cards on phones / reduced motion |
 | 3 | Places | Expanding panels (desktop) with staggered clip-path rise + parallax zoom; snap carousel on mobile |

@@ -166,14 +166,6 @@ html.lenis body {
   }
 }
 
-/* Phones skip the intro: the hero shows immediately (a full-screen splash holds back first
-   paint on slow devices). Loader.tsx treats a hidden loader as finished. */
-@media (max-width: 767px) {
-  [data-intro-loader] {
-    display: none !important;
-  }
-}
-
 /* Intro loader timeline — pure CSS, starts at first paint. Keep in sync with src/lib/intro.ts. */
 .loader {
   animation: loader-wipe 0.5s var(--ease-in-out-quart) 0.95s both;

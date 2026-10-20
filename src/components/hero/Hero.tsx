@@ -52,17 +52,9 @@ export function Hero() {
     if (!introDone) return;
     const idle = window.requestIdleCallback ?? ((cb: () => void) => window.setTimeout(cb, 200));
     const cancel = window.cancelIdleCallback ?? window.clearTimeout;
-    let idleId: number | undefined;
-    // Phones have no intro to hide behind, so give first paint and hydration a head start.
-    const delay = window.setTimeout(
-      () => (idleId = idle(() => setLoadGlobe(true), { timeout: 1200 })),
-      mobile ? 1800 : 0,
-    );
-    return () => {
-      window.clearTimeout(delay);
-      if (idleId !== undefined) cancel(idleId);
-    };
-  }, [introDone, mobile]);
+    const id = idle(() => setLoadGlobe(true), { timeout: 1200 });
+    return () => cancel(id);
+  }, [introDone]);
 
   // Stop rendering WebGL once the hero scrolls away.
   useEffect(() => {
